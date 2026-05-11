@@ -1,0 +1,9 @@
+:root {
+    --primary-blue: #3182ce;
+    --bright-blue: #63b3ed; 
+    --success-green: #48bb78;
+    --error-red: #f56565;
+    --dark-bg: rgba(13, 27, 31, 0.95);
+    --glow-effect: rgba(13, 160, 133, 0.6); 
+    --text-light: #e2e8f0;
+}

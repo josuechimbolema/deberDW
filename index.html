@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Electromecánica Avanzada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img/pum.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#" id="link-inicio">Inicio</a></li>
+                    <li><a href="#" id="link-cursos">Cursos</a></li>
+                    <li><a href="#" id="link-registro">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sec-inicio" class="animate-in">
+            <div class="hero-header">
+                <h2>Expertos en Electromecánica</h2>
+                <p>Potenciamos el rendimiento vehicular con tecnología de vanguardia.</p>
+            </div>
+            <div class="info-cards-container">
+                <article class="info-card"><h3>Sistemas de Motos</h3><p>Diagnóstico de CDI y arneses eléctricos.</p></article>
+                <article class="info-card"><h3>Mecánica Automotriz</h3><p>Inyección electrónica y sensores de motor.</p></article>
+                <article class="info-card"><h3>Ingeniería Aplicada</h3><p>Sincronización mecánica y control digital.</p></article>
+            </div>
+        </section>
+
+        <section id="sec-cursos" class="animate-in" style="display: none;">
+            <h2 style="text-align: center; margin-bottom: 30px;">Catálogo de Cursos</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <img src="img/moto.jpg" alt="Motos" class="card-img">
+                    <div class="card-body"><h3>Electricidad de Motos</h3><p>Especialízate en sistemas de encendido y carga.</p><button class="btn-info">Ver Temario</button></div>
+                </article>
+                <article class="card">
+                    <img src="img/carro.jpg" alt="Carros" class="card-img">
+                    <div class="card-body"><h3>Inyección Electrónica</h3><p>Estudio avanzado de ECUs y sensores.</p><button class="btn-info">Ver Temario</button></div>
+                </article>
+                <article class="card">
+                    <img src="img/herramientas.jpg" alt="Mecánica" class="card-img">
+                    <div class="card-body"><h3>Mecánica de Precisión</h3><p>Mantenimiento industrial y herramientas finas.</p><button class="btn-info">Ver Temario</button></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="form-container" class="animate-in" style="display: none;">
+            <div class="form-box">
+                <h2>Registro de Usuario</h2>
+                <form id="userForm" novalidate>
+                    <div class="field"><label>Nombre:</label><input type="text" id="nombre" required minlength="3"></div>
+                    <div class="field"><label>Correo:</label><input type="email" id="correo" required></div>
+                    <div class="field"><label>Contraseña:</label><input type="password" id="password" required minlength="8"></div>
+                    <div class="field" style="flex-direction:row; gap:10px;"><input type="checkbox" id="terminos" required><label for="terminos">Acepto términos</label></div>
+                    <button type="submit" id="submitBtn">Finalizar Registro</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer><p>&copy; 2026 - Ingeniería de Software | Universidad Técnica de Milagro</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
